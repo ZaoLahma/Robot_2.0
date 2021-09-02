@@ -1,0 +1,2 @@
+#define RobotCtrl_VERSION_MAJOR @RobotCtrl_VERSION_MAJOR@
+#define RobotCtrl_VERSION_MINOR @RobotCtrl_VERSION_MINOR@
