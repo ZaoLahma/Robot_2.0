@@ -1,0 +1,5 @@
+include_directories(${RobotCtrl_SOURCE_DIR})
+include_directories(${RobotCtrl_SOURCE_DIR}/lib/drv/mcu/inc)
+link_directories(${RobotCtrl_SOURCE_DIR}/lib/drv/mcu/src)
+add_executable(RobotCtrl RobotCtrlMain.cpp)
+target_link_libraries(RobotCtrl mcu)

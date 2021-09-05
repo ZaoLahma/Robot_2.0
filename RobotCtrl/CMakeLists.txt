@@ -7,9 +7,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 configure_file(RobotCtrlConfig.h.in RobotCtrlConfig.h)
 
-add_executable(RobotCtrl RobotCtrlMain.cpp)
-
-target_include_directories(RobotCtrl PUBLIC
-                           "${PROJECT_BINARY_DIR}"
-                           )
-
+add_subdirectory(app)
+add_subdirectory(lib)
