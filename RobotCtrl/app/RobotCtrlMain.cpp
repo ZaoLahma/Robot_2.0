@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
 
 	  std::cout<<"Num cores: "<<mcu.getNumProcessorCores()<<std::endl;
 
-    TimerScheduler scheduler;
+    TimerScheduler scheduler(std::chrono::milliseconds(250));
 
     scheduler.start();
     scheduler.stop();
