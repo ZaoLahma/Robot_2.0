@@ -1,6 +1,7 @@
 #include <iostream>
 #include <RobotCtrlConfig.h>
 #include <mcu.h>
+#include <timer_scheduler.h>
 
 int main(int argc, char* argv[])
 {
@@ -11,6 +12,11 @@ int main(int argc, char* argv[])
 	  Mcu mcu;
 
 	  std::cout<<"Num cores: "<<mcu.getNumProcessorCores()<<std::endl;
+
+    TimerScheduler scheduler;
+
+    scheduler.start();
+    scheduler.stop();
 
 	  return 0;
 }
